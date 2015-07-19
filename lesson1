@@ -1,0 +1,33 @@
+One of the basics of debugging when---it worked yesterday, but not today is to 
+focus on what changed.  It's surprisingly easy to get misled by worries about things
+that didn't really change.  Using diff helps focus on just code changes, and most
+likely, that's where the problem lies.
+
+diff and friends are less likely to be helpful in situations where the code that's 
+not working is completely new, and there is no old, "it worked before" version.
+
+In this case, the bottom level strategy is often to reduce the new stuff to a bare
+minimum---not the minimum that users might use, but the bare minimum that can run 
+in any way at all.  Work up from there, adding just a little bit at a time.
+
+
+Manual commits
+You decide when commits make sense.  This will generally be when some usable amount
+of work has been done.  It may also be a goal to (generally) have commits that pass
+some minimal set of unit tests.  You cannot (and should not) always do this, but it
+will simplifiy commits a bit.
+
+Why save versions in tandem---that is for whole directories of files at once?  Because they
+are inter-related.  Again, intellectual control; one commit represents a bit of work that 
+makes sense and is complete  (you hope, anyway) in itself.
+
+using git log is kind of annoying---by default, anyway, you get the whole log.  Look at
+the options to see if there are ways to just get some files, show which files changed each
+time, only get within a date range, and so on.  
+
+Git diff is kind of clunky.  vimdiff might be better.
+
+Using git allows you to make lots of 'experimental' changes, since you know you can always get
+back to a good state.  You might even want to label individual commits somehow as passing 
+certain tests.
+
