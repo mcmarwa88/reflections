@@ -1,0 +1,11 @@
+What happens when you initialize a repository?  Why do you need to do
+this?
+
+git init creates a .git subdirectory, and probably initializes some files/data
+structures there.  This sets up git's tracking information, and lets git know
+that the directory is under git management.
+
+How is the staging area different from the working dir and the repository?  
+It is just a set of pointers to files in the directory; it is not a part of 
+the repository---although that's not clear.  It is probably managed by the repo,
+but whether it is considered in the repo or not could be argued.
