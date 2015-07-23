@@ -9,3 +9,10 @@ How is the staging area different from the working dir and the repository?
 It is just a set of pointers to files in the directory; it is not a part of 
 the repository---although that's not clear.  It is probably managed by the repo,
 but whether it is considered in the repo or not could be argued.
+
+So, if the work involves several logical changes, you can do them all at once in
+your working directory, (and test to see that they are all OK), and then add files
+to the staging area one logical set at at time, and do a commit for each set of 
+adds.  Nice idea, but it won't work if changes for two logical issues are in a 
+single file.  Staging area still seems like more of a complication than a good 
+feature.
