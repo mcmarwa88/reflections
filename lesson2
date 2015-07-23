@@ -16,3 +16,12 @@ to the staging area one logical set at at time, and do a commit for each set of
 adds.  Nice idea, but it won't work if changes for two logical issues are in a 
 single file.  Staging area still seems like more of a complication than a good 
 feature.
+
+Branches
+Branches for 
+1.  bug fixes
+2.  new features
+3.  anything where you want to work for a while on a fixed target, 
+    while still allowing changes/fixes to be added to the product.
+
+
