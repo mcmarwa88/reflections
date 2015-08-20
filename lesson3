@@ -1,0 +1,4 @@
+Several reasons to use a remote repository:
+    1.  Share work.
+    2.  Protect work against local store failures
+You might not want to put things on a remote if they are not yet ready for sharing.
