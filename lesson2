@@ -24,4 +24,16 @@ Branches for
 3.  anything where you want to work for a while on a fixed target, 
     while still allowing changes/fixes to be added to the product.
 
+What is the utility of the diagrams?  It makes it easy to see the relationships.
+Probably gives you some idea about what merges are going to be like.
+More eye-candy.  Do we really need this?  In this case, it is probably useful.
+
+So, merging two branches:  new lines from both branches.  Remove lines removed from either
+one or both branches (?).  Not sure about conflicts.
+You keep all the changes each version has from a common ancestor.
+
+Automatic merging is OK for simple, disjoint changes, but you would still want to 
+run a full set of tests.  Just because the code changes are textually disjoint, it doesn't 
+mean they cannot affect one another, or affect other parts of the code incorrectly.
+
 
